@@ -18,13 +18,16 @@ public class LSWRC_Longest_substring {
                 charSet.add(s.charAt(right));
                 maxLenght = Math.max(maxLenght, right-left+1);
             } else {
-
-                while (charSet.contains(s.charAt(right))) {
-                    charSet.remove(s.charAt(left));
-                    left ++;
-                }
-                charSet.add(s.charAt(right));
+                charSet.remove(left);
+                left ++;
             }
+
+            /*while(s.charSet.contains(s.charAt(right) {
+            charset.remove(s,charAt(left);
+            left ++
+            }
+            s
+             */
 
 
         }
