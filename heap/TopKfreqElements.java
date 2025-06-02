@@ -10,8 +10,8 @@ public class TopKfreqElements {
 // create a map to sotre the frequency of elements
         Map<Integer, Integer> frequencyMap = new HashMap<>();
 
-        for (int i : nums) {
-            frequencyMap.put(i, frequencyMap.getOrDefault(i,0)+1);
+        for (int num : nums) {
+            frequencyMap.put(num, frequencyMap.getOrDefault(num,0)+1);
         }
 
         // define the priority query // this is a max heap meaning the high frequency items wil come out first thats why //b-a
