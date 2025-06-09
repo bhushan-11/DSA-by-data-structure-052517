@@ -18,16 +18,10 @@ public class LSWRC_Longest_substring {
                 charSet.add(s.charAt(right));
                 maxLenght = Math.max(maxLenght, right-left+1);
             } else {
-                charSet.remove(left);
+                charSet.remove(s.charAt(left));
                 left ++;
             }
 
-            /*while(s.charSet.contains(s.charAt(right) {
-            charset.remove(s,charAt(left);
-            left ++
-            }
-            s
-             */
 
 
         }
@@ -39,7 +33,7 @@ public class LSWRC_Longest_substring {
 
         LSWRC_Longest_substring lswrc_longest_substring = new LSWRC_Longest_substring();
 
-        int result  = lswrc_longest_substring.lengthOfLongestSubstring("abcabccbb");
+        int result  = lswrc_longest_substring.lengthOfLongestSubstring("abcadef");
 
         System.out.println("the result is " + result);
 
